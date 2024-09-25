@@ -607,7 +607,7 @@ void    umac_mouse(int deltax, int deltay, int button)
         pending_mouse_deltay += deltay;
 
         /* Clamp if the UI has flooded with lots and lots of steps!
-         */
+         
         if (pending_mouse_deltax > MOUSE_MAX_PENDING_PIX)
                 pending_mouse_deltax = MOUSE_MAX_PENDING_PIX;
         if (pending_mouse_deltax < -MOUSE_MAX_PENDING_PIX)
@@ -616,7 +616,7 @@ void    umac_mouse(int deltax, int deltay, int button)
                 pending_mouse_deltay = MOUSE_MAX_PENDING_PIX;
         if (pending_mouse_deltay < -MOUSE_MAX_PENDING_PIX)
                 pending_mouse_deltay = -MOUSE_MAX_PENDING_PIX;
-
+*/
         /* FIXME: The movement might take a little time, but this
          * posts the button status immediately.  Probably OK, but the
          * mismatch might be perceptible.
